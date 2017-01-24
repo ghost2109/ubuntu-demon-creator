@@ -31,5 +31,4 @@ echo -e "$template" > "/etc/init.d/$name"
 chmod +x "/etc/init.d/$name"
 touch "/var/log/$name.log"
 chown "$username" "/var/log/$name.log"
-update-rc.d "$name" defaults
 service "$name" start
